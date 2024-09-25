@@ -5,9 +5,8 @@ Import-Module Get-ChildItemColor
 $env:PYTHONIOENCODING="utf-8"
 
 # Theme BEGIN oh-my-posh beautify
-# oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\jandedobbeleer.omp.json" | Invoke-Expression
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\agxm.omp.json" | Invoke-Expression
-# oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\M365Princess.omp.json" | Invoke-Expression
+# oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\agxm.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "https://raw.githubusercontent.com/dosicker/terminal-beautify/refs/heads/main/config/agxm.omp.json" | Invoke-Expression
 
 # 配置Tab自动补全
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
