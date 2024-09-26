@@ -104,7 +104,8 @@
         {
           "foreground": "p:white",
           "foreground_templates": [
-            "{{ if .Env.APPEARANCE_MODE \"dark\" }}p:white{{ else }}p:teal_blue{{ end }}"
+            "{{ if eq \"dark\" .Env.APPEARANCE_MODE }}p:white{{ end }}",
+            "{{ if eq \"light\" .Env.APPEARANCE_MODE }}p:teal_blue{{ end }}"
           ],
           "properties": {
             "always_enabled": true
@@ -115,9 +116,7 @@
         },
         {
           "foreground": "p:white",
-          "foreground_templates": [
-            "{{ if .Env.APPEARANCE_MODE \"dark\" }}p:white{{ else }}p:teal_blue{{ end }}"
-          ],
+          "foreground_templates": ["{{ if eq \"dark\" .Env.APPEARANCE_MODE }}p:white{{ else }}p:teal_blue{{ end }}"],
           "properties": {
             "always_enabled": true
           },
