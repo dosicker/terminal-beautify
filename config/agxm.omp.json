@@ -102,7 +102,10 @@
     {
       "segments": [
         {
-          "foreground": "#ffffff",
+          "foreground": "p:white",
+          "foreground_templates": [
+            "{{ if .Env.APPEARANCE_MODE \"dark\" }}p:white{{ else }}p:teal_blue{{ end }}"
+          ],
           "properties": {
             "always_enabled": true
           },
@@ -111,7 +114,10 @@
           "type": "status"
         },
         {
-          "foreground": "#ffffff",
+          "foreground": "p:white",
+          "foreground_templates": [
+            "{{ if .Env.APPEARANCE_MODE \"dark\" }}p:white{{ else }}p:teal_blue{{ end }}"
+          ],
           "properties": {
             "always_enabled": true
           },
