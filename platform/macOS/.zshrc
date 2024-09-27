@@ -11,7 +11,6 @@ fi
 export OMP_CACHE_DIR=$HOME/Library/Caches
 
 # init Oh My Posh
-# eval "`oh-my-posh init zsh --config https://raw.githubusercontent.com/dosicker/terminal-beautify/refs/heads/main/config/agxm.omp.json`"
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-    eval "$(oh-my-posh init zsh --config https://raw.githubusercontent.com/dosicker/terminal-beautify/refs/heads/main/config/agxm.omp.json)"
+    eval "$(oh-my-posh init zsh --config https://raw.githubusercontent.com/dosicker/terminal-beautify/main/config/agxm.omp.json)"
 fi
