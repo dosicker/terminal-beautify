@@ -6,7 +6,7 @@ import iterm2
 async def on_theme_change(connection, theme):
     # 检测当前主题是浅色还是深色
     await asyncio.create_subprocess_shell("""
-        osascript -e 'tell application "iTerm2" to tell current session of current window to write text "exec zsh"'
+        osascript -e 'tell application "iTerm2" to tell current session of current window to write text "source ~/.zshrc"'
         """)
 
 async def main(connection):
