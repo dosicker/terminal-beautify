@@ -20,7 +20,7 @@
 ### 综合了官方的主题下，感觉不是很适合自己的感官...调整了一点点图标配置...
 
 ### 效果图：
-![macOS Light](assets/macOS%20light.png)
+![macOS Light](assets/macOS%20Light.png)
 <center>macOS Light</center>
 
 ![macOS Dark](assets/macOS%20Dark.png)
