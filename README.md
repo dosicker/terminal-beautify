@@ -8,6 +8,7 @@
 2、再开启terminal，打开settings.json（快捷键：Ctrl + Shift + ,），配置关键字段profiles > defaults > colorScheme为dark & light枚举形式（详情可看platform > Windows > Terminal > settings.json）来支持日夜间模式的切换，该配置好了之后，再打开Windows Terminal > 设置 > 外观 > 应用程序主题 > 切换为“使用Windows主题”。
 3、最后ohmyposh也配完后，结束~enjoy it！
 ```
+**PS：若在VSCode中使用了powershell插件扩展，需要在C:\Windows\System32\WindowsPowerShell\v1.0\目录下新建Microsoft.VSCode_profile.ps1文件，内容跟platform > Windows > Terminal > Microsoft.PowerShell_profile.ps1一模一样就行啦~**
 **TODO：关于Windows这套方案下实现ohmyposh跟随系统日夜间模式的切换，最初的猜测应该也是需要修改Terminal相关的钩子和ps1脚本来监听系统模式变更后…到现在发现好像Terminal的api支持并没有那么开放，貌似无法做到实时刷新当前窗口的终端会话？或者说有可能也是在settings.json中来实现？暂时没继续深入研究，等后面抽空来~**
 
 ### macOS食用配方：[iTerm2](https://iterm2.com/) + [Oh My Posh](https://ohmyposh.dev/)
