@@ -51,10 +51,19 @@ function ListDirectory {
     (Get-ChildItem).Name
     Write-Host("")
 }
-Set-Alias -Name ls -Value ListDirectory
-Set-Alias -Name ll -Value Get-ChildItem
+# Set-Alias -Name ls -Value ListDirectory
+Set-Alias -Name ll -Value ListDirectory
+Set-Alias -Name list -Value Get-ChildItem
+# PowerShell 5.1及以下版本无法设置ls的cmdlet，因为它的scope为AllScope选项，会出现（WriteError: (ls:String) [Set-Alias], SessionStateUnauthorizedAccessException）错误
+# 而它自身的ls cmdlet命令相等于Get-ChildItem/dir，所以调整ll的cmdlet为(Get-ChildItem).Name形式
 
-# touch alias
+# set which cmdlet
+function WhichCmdlet {
+    $(Get-Command $args[0]).Source
+}
+Set-Alias -Name which -Value WhichCmdlet
+
+# set touch cmdlet
 function touch {
     param (
         [string]$path
