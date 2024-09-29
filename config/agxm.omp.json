@@ -103,15 +103,14 @@
       "segments": [
         {
           "foreground": "p:teal_blue",
-          "foreground_templates": [
-            "{{ if eq \"dark\" .Env.APPEARANCE_MODE }}p:white{{ end }}",
-            "{{ if eq \"light\" .Env.APPEARANCE_MODE }}p:teal_blue{{ end }}"
-          ],
+          "foreground_templates": ["{{ if eq \"dark\" .Env.APPEARANCE_MODE }}p:white{{ else }}p:teal_blue{{ end }}"],
           "properties": {
-            "always_enabled": true
+            "always_enabled": true,
+            "display_exit_code": true
           },
-          "style": "plain",
-          "template": " {{ if gt .Code 0 }}\udb80\udc30{{ else }}\uf4a7{{ end }} ",
+          "style": "diamond",
+          "template": " {{ if gt .Code 0 }}\uf00d {{ reason .Code }}{{ else }}\uf00c{{ end }} ",
+          "trailing_diamond": "\ue0b4",
           "type": "status"
         },
         {

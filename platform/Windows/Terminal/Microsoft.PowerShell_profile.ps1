@@ -4,7 +4,7 @@ function ApplyPoshTheme {
 }
 
 function Switch-PoshTheme {
-	# 获取注册表内存储当前系统的应用外观模式：1 => Light；0 => Dark
+	# 获取存储在注册表中当前系统的应用外观模式：1 => Light；0 => Dark
 	$appsTheme=Get-ItemPropertyValue -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize" -Name "AppsUseLightTheme"
 
 	if ($appsTheme -eq 1) {
@@ -25,7 +25,6 @@ Import-Module Get-ChildItemColor
 
 # Theme BEGIN oh-my-posh beautify
 # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\agxm.omp.json" | Invoke-Expression
-# oh-my-posh init pwsh --config "https://raw.githubusercontent.com/dosicker/terminal-beautify/main/config/agxm.omp.json" | Invoke-Expression
 # 执行
 if ($PSVersionTable.Platform -eq 'Unix') {
 	ApplyPoshTheme
