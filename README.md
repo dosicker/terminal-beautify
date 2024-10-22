@@ -8,9 +8,10 @@
 2、再开启terminal，打开settings.json（快捷键：Ctrl + Shift + ,），配置关键字段profiles > defaults > colorScheme为dark & light枚举形式（详情可看platform > Windows > Terminal > settings.json）来支持日夜间模式的切换，该配置好了之后，再打开Windows Terminal > 设置 > 外观 > 应用程序主题 > 切换为“使用Windows主题”。
 3、最后ohmyposh也配完后，结束~enjoy it！
 ```
-**PS：若在VSCode中使用了powershell插件扩展，需要在C:\Users\用户名\Documents\WindowsPowerShell\目录下新建“Microsoft.VSCode_profile.ps1”文件，内容跟platform > Windows > Terminal > Microsoft.PowerShell_profile.ps1一模一样就行啦~**
+> **PS：若在VSCode中使用了powershell插件扩展，需要在C:\Users\用户名\Documents\WindowsPowerShell\目录下新建“Microsoft.VSCode_profile.ps1”文件，内容跟platform > Windows > Terminal > Microsoft.PowerShell_profile.ps1一模一样就行~**
 
-TODO：关于Windows这套方案下实现ohmyposh跟随系统日夜间模式的切换，最初的猜测应该也是需要修改Terminal相关的钩子和ps1脚本来监听系统模式变更后…到现在发现好像Terminal的api支持并没有那么开放，貌似无法做到实时刷新当前窗口的终端会话？或者说有可能也是在settings.json中来实现？暂时没继续深入研究，等后面抽空来~
+
+> TODO：关于Windows这套方案下实现ohmyposh跟随系统日夜间模式的切换，最初的猜测应该也是需要修改Terminal相关的钩子和ps1脚本来监听系统模式变更后…到现在发现好像Terminal的api支持并没有那么开放，貌似无法做到实时刷新当前窗口的终端会话？或者说有可能也是在settings.json中来实现？暂时没继续深入研究，等后面抽空来~
 
 <br />
 
@@ -22,20 +23,20 @@ TODO：关于Windows这套方案下实现ohmyposh跟随系统日夜间模式的�
 2、打开iTerm2，顶部的Scripts > Manage > Import，导哪个呢？导config > APPEARANCE_MODE_CHANGE.py这个文件即可；and then…关掉iTerm2（exit），再重新打开，完事。
 ```
 
-### 综合了官方的主题下，感觉不是很适合自己的感官...调整了一点点图标配置...
+#### 综合了官方的主题下，感觉不是很适合自己的感官...调整了一点点图标配置...
 
-# 上效果图：
+## 上效果图：
 
-## <center>macOS Light</center>
+### <center>macOS Light</center>
 ![macOS Light](assets/macOS%20Light.png)
 
-## <center>macOS Dark</center>
+### <center>macOS Dark</center>
 ![macOS Dark](assets/macOS%20Dark.png)
 
-## <center>Windows Dark</center>
+### <center>Windows Dark</center>
 ![Windows Dark](assets/Windows%20Dark.png)
 
-## <center>Windows Light</center>
+### <center>Windows Light</center>
 ![Windows Light](assets/Windows%20Light.png)
 
 ## 开冲！！！
