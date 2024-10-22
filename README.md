@@ -24,17 +24,18 @@ TODO：关于Windows这套方案下实现ohmyposh跟随系统日夜间模式的�
 
 ### 综合了官方的主题下，感觉不是很适合自己的感官...调整了一点点图标配置...
 
-### 效果图：
+# 上效果图：
+
+## <center>macOS Light</center>
 ![macOS Light](assets/macOS%20Light.png)
-<center>macOS Light</center>
 
+## <center>macOS Dark</center>
 ![macOS Dark](assets/macOS%20Dark.png)
-<center>macOS Dark</center>
 
+## <center>Windows Dark</center>
 ![Windows Dark](assets/Windows%20Dark.png)
-<center>Windows Dark</center>
 
+## <center>Windows Light</center>
 ![Windows Light](assets/Windows%20Light.png)
-<center>Windows Light</center>
 
-### 开冲！！！
+## 开冲！！！
